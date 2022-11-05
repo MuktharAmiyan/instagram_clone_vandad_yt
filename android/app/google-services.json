@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "751609463263",
+    "project_id": "instagram-clone-vandad-ba568",
+    "storage_bucket": "instagram-clone-vandad-ba568.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:751609463263:android:8711e4c15db77158f4c46a",
+        "android_client_info": {
+          "package_name": "com.example.instagram_clone_vandad_yt"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "751609463263-shttvtk603ft5bvv46hj8k4u73p3p137.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBTQgRJrk0ihf_rO7IWdqaUyoScKJqRImg"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "751609463263-shttvtk603ft5bvv46hj8k4u73p3p137.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
