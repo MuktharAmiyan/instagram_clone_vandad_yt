@@ -2,14 +2,9 @@ import 'package:firebase_core/firebase_core.dart';
 import 'package:flutter/material.dart';
 import 'package:hooks_riverpod/hooks_riverpod.dart';
 import 'package:instagram_clone_vandad_yt/firebase_options.dart';
-import 'dart:developer' as devtool show log;
 
 import 'package:instagram_clone_vandad_yt/states/auth/provider/auth_state_notifier.dart';
 import 'package:instagram_clone_vandad_yt/states/auth/provider/is_logged_in_provider.dart';
-
-extension Log on Object {
-  void log() => devtool.log(toString());
-}
 
 void main() async {
   WidgetsFlutterBinding.ensureInitialized();
