@@ -2,7 +2,6 @@ import 'package:firebase_core/firebase_core.dart';
 import 'package:flutter/material.dart';
 import 'package:hooks_riverpod/hooks_riverpod.dart';
 import 'package:instagram_clone_vandad_yt/firebase_options.dart';
-
 import 'package:instagram_clone_vandad_yt/states/auth/provider/auth_state_notifier.dart';
 import 'package:instagram_clone_vandad_yt/states/auth/provider/is_logged_in_provider.dart';
 
@@ -31,7 +30,7 @@ class MyApp extends StatelessWidget {
       ),
       themeMode: ThemeMode.dark,
       home: Consumer(
-        builder: (context, ref, child) {
+        builder: (_, ref, child) {
           final isLoggedIn = ref.watch(isLoggedInProvider);
           if (isLoggedIn) {
             return const MainView();
