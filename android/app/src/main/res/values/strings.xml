@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="facebook_app_id">535100121781418</string>
+    <string name="fb_login_protocol_scheme">fb535100121781418</string>
+    <string name="facebook_client_token">278b96e0e4469926d1e73ca865add187</string>
+    <string name="app_name">YT IMAGE SHARE APP</string>
+</resources>
