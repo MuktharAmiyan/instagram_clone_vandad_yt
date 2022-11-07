@@ -7,6 +7,7 @@ import 'package:instagram_clone_vandad_yt/firebase_options.dart';
 import 'package:instagram_clone_vandad_yt/states/auth/provider/auth_state_notifier.dart';
 import 'package:instagram_clone_vandad_yt/states/auth/provider/is_logged_in_provider.dart';
 import 'package:instagram_clone_vandad_yt/states/provider/is_loading_provider.dart';
+import 'package:instagram_clone_vandad_yt/views/components/animation/data_not_found_animation_view.dart';
 import 'package:instagram_clone_vandad_yt/views/components/loading/loading_screen.dart';
 import 'package:instagram_clone_vandad_yt/views/login/login_view.dart';
 
