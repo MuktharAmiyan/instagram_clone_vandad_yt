@@ -8,6 +8,7 @@ import 'package:instagram_clone_vandad_yt/states/auth/provider/auth_state_notifi
 import 'package:instagram_clone_vandad_yt/states/auth/provider/is_logged_in_provider.dart';
 import 'package:instagram_clone_vandad_yt/states/provider/is_loading_provider.dart';
 import 'package:instagram_clone_vandad_yt/views/components/loading/loading_screen.dart';
+import 'package:instagram_clone_vandad_yt/views/login/login_view.dart';
 
 void main() async {
   WidgetsFlutterBinding.ensureInitialized();
@@ -53,28 +54,6 @@ class MyApp extends StatelessWidget {
       ),
       debugShowCheckedModeBanner: false,
     );
-  }
-}
-
-class LoginView extends ConsumerWidget {
-  const LoginView({super.key});
-
-  @override
-  Widget build(BuildContext context, WidgetRef ref) {
-    return Scaffold(
-        appBar: AppBar(),
-        body: Column(
-          children: [
-            TextButton(
-              onPressed: ref.read(authStateProvider.notifier).logInWithFaceBook,
-              child: const Text("Facebbok"),
-            ),
-            TextButton(
-              onPressed: ref.read(authStateProvider.notifier).logInWithGoogle,
-              child: const Text("Google"),
-            )
-          ],
-        ));
   }
 }
 

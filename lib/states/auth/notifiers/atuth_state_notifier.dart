@@ -35,6 +35,8 @@ class AuthStateNotifier extends StateNotifier<AuthState> {
         isLoading: false,
         userId: userId,
       );
+    } else {
+      state = state.copiedWithIsLoading(false);
     }
   }
 
@@ -49,6 +51,8 @@ class AuthStateNotifier extends StateNotifier<AuthState> {
         isLoading: false,
         userId: userId,
       );
+    } else {
+      state = state.copiedWithIsLoading(false);
     }
   }
 
