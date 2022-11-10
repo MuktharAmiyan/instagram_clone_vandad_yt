@@ -1,6 +1,8 @@
 import 'package:flutter/material.dart';
+import 'package:instagram_clone_vandad_yt/states/image_upload/models/file_type.dart';
 import 'package:instagram_clone_vandad_yt/states/posts/model/post.dart';
 import 'package:instagram_clone_vandad_yt/views/components/post/post_thumbnail_view.dart';
+import 'package:instagram_clone_vandad_yt/views/components/post/post_video_view.dart';
 import 'package:instagram_clone_vandad_yt/views/post_comments/post_comment_view.dart';
 
 class PostGridView extends StatelessWidget {
@@ -17,12 +19,15 @@ class PostGridView extends StatelessWidget {
         crossAxisSpacing: 8.0,
       ),
       itemCount: posts.length,
-      itemBuilder: (context, index) => PostThumbailView(
-        post: posts.elementAt(index),
-        onTapped: () {
-          //TODO: Navigate to post details
-        },
-      ),
+      itemBuilder: (context, index) {
+        final post = posts.elementAt(index);
+        return PostThumbailView(
+          post: post,
+          onTapped: () {
+            //TODO: Navigate to post details
+          },
+        );
+      },
     );
   }
 }
