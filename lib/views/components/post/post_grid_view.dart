@@ -21,13 +21,6 @@ class PostGridView extends StatelessWidget {
         post: posts.elementAt(index),
         onTapped: () {
           //TODO: Navigate to post details
-          Navigator.of(context).push(
-            MaterialPageRoute(
-              builder: (context) => PostCommentView(
-                postId: posts.elementAt(index).postId,
-              ),
-            ),
-          );
         },
       ),
     );
