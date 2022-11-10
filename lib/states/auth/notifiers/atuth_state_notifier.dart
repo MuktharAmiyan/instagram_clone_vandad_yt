@@ -36,7 +36,7 @@ class AuthStateNotifier extends StateNotifier<AuthState> {
         userId: userId,
       );
     } else {
-      state = state.copiedWithIsLoading(false);
+      state = const AuthState.unknown();
     }
   }
 
@@ -52,7 +52,7 @@ class AuthStateNotifier extends StateNotifier<AuthState> {
         userId: userId,
       );
     } else {
-      state = state.copiedWithIsLoading(false);
+      state = const AuthState.unknown();
     }
   }
 
