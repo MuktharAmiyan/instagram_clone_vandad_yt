@@ -2,7 +2,6 @@ import 'package:firebase_core/firebase_core.dart';
 import 'package:flutter/material.dart';
 import 'package:hooks_riverpod/hooks_riverpod.dart';
 import 'package:instagram_clone_vandad_yt/firebase_options.dart';
-
 import 'package:instagram_clone_vandad_yt/states/auth/provider/is_logged_in_provider.dart';
 import 'package:instagram_clone_vandad_yt/states/provider/is_loading_provider.dart';
 import 'package:instagram_clone_vandad_yt/views/components/loading/loading_screen.dart';
