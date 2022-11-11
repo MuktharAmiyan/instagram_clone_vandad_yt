@@ -6,7 +6,6 @@ import 'package:instagram_clone_vandad_yt/states/auth/provider/user_id_provider.
 import 'package:instagram_clone_vandad_yt/states/image_upload/models/file_type.dart';
 import 'package:instagram_clone_vandad_yt/states/image_upload/models/thumbnail_request.dart';
 import 'package:instagram_clone_vandad_yt/states/image_upload/providers/image_upload_provider.dart';
-import 'package:instagram_clone_vandad_yt/states/image_upload/providers/thumbnail_provider.dart';
 import 'package:instagram_clone_vandad_yt/states/post_settings/models/post_settings.dart';
 import 'package:instagram_clone_vandad_yt/states/post_settings/provider/post_settings_provider.dart';
 import 'package:instagram_clone_vandad_yt/views/components/file_thumbnail_view.dart';

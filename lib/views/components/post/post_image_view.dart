@@ -1,6 +1,4 @@
 import 'package:flutter/material.dart';
-import 'package:flutter/src/widgets/container.dart';
-import 'package:flutter/src/widgets/framework.dart';
 import 'package:instagram_clone_vandad_yt/states/posts/model/post.dart';
 
 class PostImageView extends StatelessWidget {

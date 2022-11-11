@@ -31,6 +31,7 @@ class _MainViewState extends ConsumerState<MainView> {
               onPressed: () async {
                 final videoFile = await ImagePickerHelper.pickVideoFromGalley();
                 if (videoFile != null) {
+                  // ignore: unused_result
                   ref.refresh(postSettingsProvider);
                   if (!mounted) {
                     return;
@@ -50,6 +51,7 @@ class _MainViewState extends ConsumerState<MainView> {
                 final imageFile =
                     await ImagePickerHelper.pickImageFromGallery();
                 if (imageFile != null) {
+                  // ignore: unused_result
                   ref.refresh(postSettingsProvider);
                   if (!mounted) {
                     return;

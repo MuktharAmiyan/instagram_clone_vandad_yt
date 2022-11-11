@@ -1,9 +1,7 @@
 import 'package:flutter/material.dart';
-import 'package:instagram_clone_vandad_yt/states/image_upload/models/file_type.dart';
 import 'package:instagram_clone_vandad_yt/states/posts/model/post.dart';
 import 'package:instagram_clone_vandad_yt/views/components/post/post_thumbnail_view.dart';
-import 'package:instagram_clone_vandad_yt/views/components/post/post_video_view.dart';
-import 'package:instagram_clone_vandad_yt/views/post_comments/post_comment_view.dart';
+import 'package:instagram_clone_vandad_yt/views/post_details/post_details_view.dart';
 
 class PostGridView extends StatelessWidget {
   final Iterable<Post> posts;
@@ -24,7 +22,11 @@ class PostGridView extends StatelessWidget {
         return PostThumbailView(
           post: post,
           onTapped: () {
-            //TODO: Navigate to post details
+            Navigator.of(context).push(
+              MaterialPageRoute(
+                builder: (context) => PostDetailsView(post: post),
+              ),
+            );
           },
         );
       },

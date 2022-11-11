@@ -1,6 +1,6 @@
 import 'package:flutter/foundation.dart' show immutable;
 import 'package:flutter/material.dart' show Colors;
-import 'package:instagram_clone_vandad_yt/extentions/string/as_html_color_to_color.dart';
+import 'package:instagram_clone_vandad_yt/extensions/string/as_html_color_to_color.dart';
 
 @immutable
 class AppColors {

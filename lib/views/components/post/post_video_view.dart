@@ -30,8 +30,11 @@ class PostVideoview extends HookWidget {
           child: VideoPlayer(controller),
         );
       case false:
-        return const Center(
-          child: CircularProgressIndicator(),
+        return AspectRatio(
+          aspectRatio: post.aspectRatio,
+          child: const Center(
+            child: CircularProgressIndicator(),
+          ),
         );
       default:
         return const ErrorAnimationView();
