@@ -7,12 +7,12 @@ import 'package:instagram_clone_vandad_yt/states/posts/provider/delete_post_prov
 
 final isLoadingProvider = Provider<bool>((ref) {
   final authState = ref.watch(authStateProvider);
-  final imageUpload = ref.watch(imageUploadProvider);
+  final isImageUpload = ref.watch(imageUploadProvider);
   final deleteComment = ref.watch(deleteCommentProvider);
   final sendComment = ref.watch(sendCommentProvider);
   final isDeletingPost = ref.watch(deletePostProvider);
   return authState.isLoading ||
-      imageUpload ||
+      isImageUpload ||
       deleteComment ||
       sendComment ||
       isDeletingPost;

@@ -16,6 +16,10 @@ final userPostProvider = StreamProvider.autoDispose<Iterable<Post>>((
   controller.onListen = () {
     controller.sink.add([]);
   };
+  // final Iterable<String> list = [
+  //   "9l8o7rLWnbNNfah8NNPROFgxVcu2",
+  //   //"SAxNW43hSXYaa29dRAazn3b5PUa2",
+  // ];
 
   final sub = FirebaseFirestore.instance
       .collection(
@@ -42,6 +46,8 @@ final userPostProvider = StreamProvider.autoDispose<Iterable<Post>>((
             json: doc.data(),
           ),
         );
+    // .where((post) => list.any((uid) => uid == post.userId));
+
     controller.add(post);
   });
 

@@ -9,6 +9,8 @@ import 'package:instagram_clone_vandad_yt/views/components/dialog/alert_dialog_m
 import 'package:instagram_clone_vandad_yt/views/components/dialog/logout_dialog.dart';
 import 'package:instagram_clone_vandad_yt/views/constants/strings.dart';
 import 'package:instagram_clone_vandad_yt/views/create_new_post/create_new_post_view.dart';
+import 'package:instagram_clone_vandad_yt/views/tabs/home/home_view.dart';
+import 'package:instagram_clone_vandad_yt/views/tabs/search/search_view.dart';
 import 'package:instagram_clone_vandad_yt/views/tabs/user_posts/user_posts_view.dart';
 
 class MainView extends ConsumerStatefulWidget {
@@ -95,8 +97,8 @@ class _MainViewState extends ConsumerState<MainView> {
         ),
         body: const TabBarView(children: [
           UserPostView(),
-          UserPostView(),
-          UserPostView(),
+          SearchView(),
+          HomeView(),
         ]),
       ),
     );
